@@ -1,6 +1,6 @@
 {
   "name": "cryptanalysis-tools",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A set of cryptanalysis tools for breaking classical cipher schemes",
   "main": "./dist/src/index.js",
   "scripts": {
