@@ -1,4 +1,4 @@
-import { BasicEncryptionInput } from "../../types/BasicEncryptionInput";
+import { BasicEncryptionInput } from "../../types/encryption/BasicEncryptionInput";
 import { copyToLength } from "../array/copyToLength";
 import { letterToCipherOffset } from "../string/offsets/letterToCipherOffset";
 import { shiftLetter } from "../string/shifting/shiftLetter";
