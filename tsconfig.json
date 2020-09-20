@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es2019",
+    "module": "commonjs",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "removeComments": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "pretty": true,
+    "stripInternal": true,
+    "preserveSymlinks": true,
+    "outDir": "./dist",
+    "sourceRoot": "./src",
+    "incremental": true,
+    "resolveJsonModule": true
+  },
+  "include": ["src", "typings", "test"],
+  "exclude": [
+    "node_modules"
+  ]
+}

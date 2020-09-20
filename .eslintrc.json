@@ -1,0 +1,37 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "tsconfig.eslint.json",
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true
+    },
+    "extraFileExtensions": [".md", ".json"]
+  },
+  "env": {
+    "node": true,
+    "es6": true,
+    "jest/globals": true
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "jest",
+    "prettier",
+    "eslint-plugin-json"
+  ],
+  "extends": [
+    "plugin:@typescript-eslint/eslint-recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended",
+    "plugin:json/recommended",
+    "adjunct"
+  ],
+  "rules": {
+    "@typescript-eslint/no-floating-promises": "error",
+    "unicorn/filename-case": "off",
+    "lodash-fp/no-extraneous-function-wrapping": "off",
+    "unicorn/consistent-function-scoping": "off",
+    "lodash/prop-shorthand": "off"
+  }
+}
