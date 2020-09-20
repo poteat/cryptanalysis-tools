@@ -1,3 +1,6 @@
+import toUpper from "lodash/toUpper";
+
+import { encryptVigenere } from "../../../src";
 import { decryptVigenere } from "../../../src/utility/decryption/decryptVigenere";
 
 describe("basic", () => {
@@ -11,5 +14,21 @@ describe("basic", () => {
     const s = decryptVigenere({ key: "abc", ciphertext: "HFNLPYOSND" });
 
     expect(s).toBe("HELLOWORLD");
+  });
+
+  it("decryption is inverse of encryption", () => {
+    const key = "sdlkjghow";
+    const text = "helloworldfoobar";
+    const cipher = encryptVigenere({
+      key,
+      plaintext: text,
+    });
+
+    const recoveredPlaintext = decryptVigenere({
+      key,
+      ciphertext: cipher,
+    });
+
+    expect(recoveredPlaintext).toBe(toUpper(text));
   });
 });
