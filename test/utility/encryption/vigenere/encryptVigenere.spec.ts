@@ -1,4 +1,4 @@
-import { encryptVigenere } from "../../../src/utility/encryption/encryptVigenere";
+import { encryptVigenere } from "../../../../src/utility/encryption/vigenere/encryptVigenere";
 
 describe("basic", () => {
   it("AAA is no-op", () => {

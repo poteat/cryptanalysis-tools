@@ -1,7 +1,7 @@
 import toUpper from "lodash/toUpper";
 
-import { encryptVigenere } from "../../../src";
-import { decryptVigenere } from "../../../src/utility/decryption/decryptVigenere";
+import { encryptVigenere } from "../../../../src";
+import { decryptVigenere } from "../../../../src/utility/decryption/vigenere/decryptVigenere";
 
 describe("basic", () => {
   it("AAA is no-op", () => {
