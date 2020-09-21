@@ -1,11 +1,11 @@
 import { minBy, times, values } from "lodash";
 
+import { sortedEnglishLetterFrequency } from "../../../../constants/sortedEnglishLetterFrequency";
 import { assertNotEmptyString } from "../../../../safety/assertions/string/assertNotEmptyString";
 import { calculateAverage } from "../../../math/basic/calculateAverage";
 import { calculateL2Difference } from "../../../math/norm/difference/calculateL2Difference";
 import { sortDecreasingOrder } from "../../../math/sorting/sortDecreasingOrder";
 import { calculateLetterFrequency } from "../../../string/frequency/calculateLetterFrequency";
-import { sortedEnglishLetterFrequency } from "../../constants/sortedEnglishLetterFrequency";
 
 /**
  * We find the length of the key associated with the Vigenere cipher, based on

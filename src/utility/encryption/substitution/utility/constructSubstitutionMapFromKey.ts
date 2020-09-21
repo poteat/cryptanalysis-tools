@@ -1,6 +1,6 @@
 import { mapKeys, mapValues, times } from "lodash";
 
-import { englishAlphabet } from "../../../analysis/constants/englishAlphabet";
+import { englishAlphabet } from "../../../../constants/englishAlphabet";
 
 export function constructSubstitutionMapFromKey(key: string) {
   return mapValues(
