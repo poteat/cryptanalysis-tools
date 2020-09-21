@@ -1,5 +1,5 @@
 export const englishLetterFrequency = {
-  A: 0.82,
+  A: 0.082,
   B: 0.015,
   C: 0.028,
   D: 0.043,
