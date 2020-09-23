@@ -1,11 +1,12 @@
+import { getExampleSubstitutionKey } from "../../../_const/getExampleSubstitutionKey";
 import { encryptSubstitution } from "../../../../src/utility/encryption/substitution/encryptSubstitution";
 
 describe("basic", () => {
   it("can encrypt", () => {
     const plaintext = "hellosimplesubcipher";
+    const key = getExampleSubstitutionKey();
 
-    // eslint-disable-next-line no-secrets/no-secrets
-    const key = "HTKCUOISJYARGMZNBVFPXDLWQE";
+    console.log(key);
 
     const encrypted = encryptSubstitution({ key, plaintext });
 

@@ -1,7 +1,7 @@
 import { isEqual, keys } from "lodash";
 
-import { sortKeys } from "../../../../../test/utility/map/sorting/sortKeys";
 import { englishAlphabet } from "../../../../constants/englishAlphabet";
+import { sortKeys } from "../../../map/sorting/sortKeys";
 import { calculateLetterFrequency } from "../../../string/frequency/calculateLetterFrequency";
 
 export function auditSubstitutionKey(key: string) {

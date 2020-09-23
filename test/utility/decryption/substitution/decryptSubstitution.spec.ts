@@ -1,9 +1,9 @@
+import { getExampleSubstitutionKey } from "../../../_const/getExampleSubstitutionKey";
 import { decryptSubstitution } from "../../../../src/utility/decryption/substitution/decryptSubstitution";
 
 describe("basic", () => {
   it("can decrypt", () => {
-    // eslint-disable-next-line no-secrets/no-secrets
-    const key = "HTKCUOISJYARGMZNBVFPXDLWQE";
+    const key = getExampleSubstitutionKey();
     const cipher = "SURRZFJGNRUFXTKJNSUV";
 
     expect(decryptSubstitution({ key, ciphertext: cipher })).toBe(

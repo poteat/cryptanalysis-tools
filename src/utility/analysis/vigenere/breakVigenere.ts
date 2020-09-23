@@ -1,11 +1,11 @@
 import { minBy } from "lodash";
 
-import { sortKeys } from "../../../../test/utility/map/sorting/sortKeys";
 import { englishAlphabet } from "../../../constants/englishAlphabet";
 import { englishLetterFrequency } from "../../../constants/englishLetterFrequency";
 import { calculateMatchedFrequencyDifference } from "../../frequency/calculateMatchedFrequencyDifference";
 import { constructGroupSets } from "../../map/grouping/constructGroupSets";
 import { rotateMap } from "../../map/rotation/rotateMap";
+import { sortKeys } from "../../map/sorting/sortKeys";
 import { calculateLetterFrequency } from "../../string/frequency/calculateLetterFrequency";
 import { letterToCipherOffset } from "../../string/offsets/letterToCipherOffset";
 import { findVigenereKeyLength } from "./subassemblies/findVigenereKeyLength";
