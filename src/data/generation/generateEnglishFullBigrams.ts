@@ -1,7 +1,7 @@
 import { readFile, writeFile } from "fs";
 import { promisify } from "util";
 
-import { calculateBigramFrequencyMap } from "../../utility/analysis/substitution/breakSubstitution";
+import { calculateBigramFrequencyMap } from "../../utility/analysis/substitution/utility/calculateBigramFrequencyMap";
 import { sanitizePlaintext } from "../../utility/string/sanitize/sanitizePlaintext";
 
 export async function generateEnglishFullBigrams() {

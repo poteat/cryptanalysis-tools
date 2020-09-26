@@ -2,6 +2,7 @@ import { minBy } from "lodash";
 
 import { englishAlphabet } from "../../../constants/englishAlphabet";
 import { englishLetterFrequency } from "../../../constants/englishLetterFrequency";
+import { decryptVigenere } from "../../decryption/vigenere/decryptVigenere";
 import { calculateMatchedFrequencyDifference } from "../../frequency/calculateMatchedFrequencyDifference";
 import { constructGroupSets } from "../../map/grouping/constructGroupSets";
 import { rotateMap } from "../../map/rotation/rotateMap";
@@ -55,4 +56,17 @@ export function breakVigenere(ciphertext: string) {
   });
 
   return crackedKeyLetter.join("");
+}
+
+if (require.main) {
+  const ciphertext =
+    // eslint-disable-next-line no-secrets/no-secrets
+    "XKJUROWMLLPXWZNPIMBVBQJCNOWXPCCHHVVFVSLLFVXHAZITYXOHULXQOJAXELXZXMYJAQFSTSRULHHUCDSKBXKNJQIDALLPQSLLUHIAQFPBPCIDSVCIHWHWEWTHBTXRLJNRSNCIHUVFFUXVOUKJLJSWMAQFVJWJSDYLJOGJXDBOXAJULTUCPZMPLIWMLUBZXVOODYBAFDSKXGQFADSHXNXEHSARUOJAQFPFKNDHSAAFVULLUWTAQFRUPWJRSZXGPFUTJQIYNRXNYNTWMHCUKJFBIRZSMEHHSJSHYONDDZZNTZMPLILRWNMWMLVURYONTHUHABWNVW";
+
+  const key = breakVigenere(ciphertext);
+
+  const plaintext = decryptVigenere({ ciphertext, key });
+
+  console.log(key);
+  console.log(plaintext);
 }
