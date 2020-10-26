@@ -1,4 +1,4 @@
-import { repeat } from "lodash";
+import repeat from "lodash/repeat";
 
 import { greatestCommonDivisorVerbose } from "../gcd/verbose/greatestCommonDivisorVerbose";
 import { renderGreatestCommonDivisorSummary } from "../gcd/verbose/render/renderGreatestCommonDivisorSummary";
